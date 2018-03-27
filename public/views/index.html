@@ -38,8 +38,7 @@
         </div>
 
         <h2 translate>Latest Transactions</h2>
-
-        <table class="table table-hover table-striped" style="table-layout: fixed;">
+          <table class="table table-hover table-striped" style="table-layout: fixed;">
           <thead>
             <tr>
               <th>Hash</th>
@@ -52,7 +51,7 @@
             <td>
               <a class="ellipsis" href="tx/{{tx.txid}}">{{tx.txid}}</a>
             </td>
-            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' BTC'}}</span></td>
+            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut) || tx.valueOut + ' FLM'}}</span></td>
           </tr>
           </tbody>
         </table>
